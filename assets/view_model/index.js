@@ -7,9 +7,10 @@ const modeBtnEl = document.getElementById('modeBtn');
 const modeEl = document.getElementById('mode');
 const resultStrEl = document.getElementById('resultStr');
 
-modeBtnEl.addEventListener('click', changeModeString());
+modeBtnEl.addEventListener('click', changeModeString);
 
 function changeModeString() {
   const result = new model(sourceStrEl.value, modeEl.value).changeMode();
-  resultStrEl.innerHTML = result.str;
+  console.log(result);
+  resultStrEl.innerHTML = result;
 }

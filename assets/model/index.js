@@ -8,17 +8,16 @@ export default class modeString {
   changeMode() {
     switch (this.mode) {
       case 'lower':
-        this.str.toLowerCase();
-        break;
+        return this.str.toLowerCase();
+
       case 'upper':
-        this.str.toUpperCase();
-        break;
+        return this.str.toUpperCase();
+
       case 'reverse':
-        this.str.reverse();
-        break;
+        return this.str.reverse();
+
       default:
         return this.str;
     }
-    return this.str;
   }
 }
