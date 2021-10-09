@@ -9,46 +9,28 @@
 </head>
 <body>
     <!--
-        
-    let y;
-
-    function f1(a1, a2){
-        let x;
-
-        return x;
-
-    }
-    function f2(a1, a2){
-        
-    let x,z;
-
-    z=y;
-    return x;
-    }
-
-
-
-    module
-
--область видимости
-- обмен!!!
-module A : a1,a2,a3 , b2 f1(), f2()
-module B: b1, b2 . b2 зависит от а2
-
-import export
-
-import!!!!
-граф зависимости модулей
-
-оператору import определяет какой код - браузеру / серваку node.js
-
-код + состояния
-режим: асихронный
-
-"use strict" !!
--->
-    
-<!--<script type="module" src='./assets/module1/index.js'></script> -->
-<script type="module" src='./assets/module2/index.js'></script>
+Реализуйте модель которая работает со строками (функции : 
+перевернуть строку наборот, 
+перевести в режим upper case, 
+перевести в режим lower case). 
+В качестве View Вы имеете введенную строку пользователем из input 
+и выбранное действие со строкой (действие выбирается из выпадающего списка). 
+Ваша цель обработать строку в заданом режиме и результат показать на страничке 
+(например в параграф или заголовок).
+PS (help) каждое действие это функция в моделе, поэтому свяжите ее (функцию) 
+с элементом списка и вызовите которая сейчас нужна
+    -->
+<div>
+    <input id="sourceStr" type="text" placeholder="Enter some text" />
+    <select id="mode">
+        <option value="upper">Upper case</option>
+        <option value="lower">Lower case</option>
+        <option value="reverse">Reverse</option>
+        <option value="nothing">No actions</option>
+    </select>
+    <button id="modeBtn">Ok</button>
+    <p id="resultStr">Result:</p>
+</div> 
+<script type="module" src='./assets/view_model/'></script>
 </body>
 </html>
